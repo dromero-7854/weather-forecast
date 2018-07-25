@@ -15,8 +15,6 @@ $ java -jar weather-forecast-1.0.0.jar
 
 - GET http://weather-forecast-ml-cloud-app.cfapps.io/periods-optimal-condition
 
-Response example: {"value": 0}
-
 ### H2 Console - Access data (only localhost)
 URL: http://localhost:8083/h2-console
 
