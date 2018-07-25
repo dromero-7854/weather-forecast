@@ -32,26 +32,26 @@ public class WeatherForecastController {
 	
 	@GetMapping("/periods-drought")
     @ResponseBody
-    public String periodsOfDrought() {
-		return "{ \"value\": " + weatherConditionRep.periodsOfDrought() + " }";
+    public Value periodsOfDrought() {
+		return new Value(weatherConditionRep.periodsOfDrought());
     }
 	
 	@GetMapping("/periods-rain")
     @ResponseBody
-    public String periodsOfRain() {
-		return "{ \"value\": " + weatherConditionRep.periodsOfRain() + " }";
+    public Value periodsOfRain() {
+		return new Value(weatherConditionRep.periodsOfRain());
     }
 	
 	@GetMapping("/periods-max-rain-intensity")
     @ResponseBody
-    public String periodsOfMaximumRainIntensity() {
-		return "{ \"value\": " + weatherConditionRep.periodsOfMaximumRainIntensity() + " }";
+    public Value periodsOfMaximumRainIntensity() {
+		return new Value(weatherConditionRep.periodsOfMaximumRainIntensity());
     }
 	
 	@GetMapping("/periods-optimal-condition")
     @ResponseBody
-    public String periodsOfOptimalCondition() {
-		return "{ \"value\": " + weatherConditionRep.periodsOfOptimalCondition() + " }";
+    public Value periodsOfOptimalCondition() {
+		return new Value(weatherConditionRep.periodsOfOptimalCondition());
     }
 
 }

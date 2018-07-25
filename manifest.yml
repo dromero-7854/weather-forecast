@@ -1,0 +1,6 @@
+---
+applications:
+- name: weather-forecast
+  instances: 1
+  host: weather-forecast-ml-cloud-app
+  path: target/weather-forecast-1.0.0.jar
